@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Nureini.unity
+- path: Assets/Scenes/Laction.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
