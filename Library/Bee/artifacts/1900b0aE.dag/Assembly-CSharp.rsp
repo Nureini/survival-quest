@@ -109,6 +109,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -364,6 +365,20 @@
 "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PlayerMovement.cs"
+"Assets/Scripts/Collectables/AmmoPick.cs"
+"Assets/Scripts/Collectables/Apple.cs"
+"Assets/Scripts/Collectables/CannedFood.cs"
+"Assets/Scripts/Collectables/Glock.cs"
+"Assets/Scripts/Collectables/MedKit.cs"
+"Assets/Scripts/Collectables/MP5.cs"
+"Assets/Scripts/Collectables/MP5Magazine.cs"
+"Assets/Scripts/Collectables/Orange.cs"
+"Assets/Scripts/Collectables/PlayerCamera1.cs"
+"Assets/Scripts/Collectables/PlayerController1.cs"
+"Assets/Scripts/Player/PlayerCamera.cs"
+"Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/Zombie/ZombieAI.cs"
+"Assets/Scripts/Zombie/ZombieStats.cs"
 -langversion:9.0
 
 /deterministic

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -197,10 +197,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 184875628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a08908fb0824e743b269d216225f31e, type: 3}
+  m_Script: {fileID: 11500000, guid: 485c53c354f4591448c7238021062562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthRecoveryAmount: 20
+  healthRecoveryAmount: 50
 --- !u!1001 &258175100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -256,8 +256,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1755865475335770947, guid: 6db7680dca4eb2748a7339cb3bc13d14, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 258175102}
   m_SourcePrefab: {fileID: 100100000, guid: 6db7680dca4eb2748a7339cb3bc13d14, type: 3}
+--- !u!1 &258175101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1755865475335770947, guid: 6db7680dca4eb2748a7339cb3bc13d14, type: 3}
+  m_PrefabInstance: {fileID: 258175100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &258175102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258175101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183fdec30ed133e4990591925e032510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthRecoveryAmount: 15
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +447,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 946307216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 089eec2c6297b3b4395cf8e65a24687c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d55536e23737ab47b0569ea1344eb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
@@ -600,7 +621,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1079258526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8f822e303bcdb14f9fe8d33ae8e4580, type: 3}
+  m_Script: {fileID: 11500000, guid: 623ceea92b163624bb17dbb2d2d98936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 30
@@ -720,7 +741,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1424443188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547ca0b13d4946f4da7e96bda5199949, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c9501e6dc3feee4284949f1bde4ebde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
@@ -802,7 +823,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790492903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a111cec38e46d4c9dd8c9d767d5f5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 58daf1fc3129a1b49b8d0d5d191bf794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 15
@@ -861,8 +882,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4199143115356664583, guid: a501219ff3ba3ab42aae76e837efaea0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1792871018}
   m_SourcePrefab: {fileID: 100100000, guid: a501219ff3ba3ab42aae76e837efaea0, type: 3}
+--- !u!1 &1792871017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4199143115356664583, guid: a501219ff3ba3ab42aae76e837efaea0, type: 3}
+  m_PrefabInstance: {fileID: 1792871016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1792871018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792871017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae5b019a9086a3498e22a3ffad99045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthRecoveryAmount: 25
 --- !u!1001 &1803671529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -937,10 +979,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1803671530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b09138385764334cb1fc51cd467b037, type: 3}
+  m_Script: {fileID: 11500000, guid: 391975680a06d8b4a8395b6b899eeddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthRecoveryAmount: 50
+  healthRecoveryAmount: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
