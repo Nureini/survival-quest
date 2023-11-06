@@ -12,7 +12,9 @@ public class ZombieAI : MonoBehaviour
     private float timeOfLastAttack = 0;
     private bool hasStopped = false;
     private ZombieStats stats = null;
-    [SerializeField] private Transform target;
+    private GameObject target;
+    //[SerializeField] private Transform target;
+
     private Vector3 walkPoint;
 
 
@@ -20,6 +22,7 @@ public class ZombieAI : MonoBehaviour
     void Start()
     {
         GetReference();
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -37,11 +40,11 @@ public class ZombieAI : MonoBehaviour
 
     private void MoveToTarget()
     {
-        agent.SetDestination(target.position);
+        agent.SetDestination(target.transform.position);
         animator.SetFloat("Velocity", 1f, 0.0f, Time.deltaTime);
         RotateToTarget();
 
-        float distanceToTarget = Vector3.Distance(target.position, transform.position);
+        float distanceToTarget = Vector3.Distance(target.transform.position, transform.position);
 
         if (distanceToTarget <= agent.stoppingDistance)
         {
@@ -92,7 +95,7 @@ public class ZombieAI : MonoBehaviour
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
         float distanceToWalk = Vector3.Distance(walkPoint, transform.position);
 
-        float distanceToTarget = Vector3.Distance(target.position, transform.position);
+        float distanceToTarget = Vector3.Distance(target.transform.position, transform.position);
         if (distanceToTarget > 5)
         {
             agent.SetDestination(walkPoint);
